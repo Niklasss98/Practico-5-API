@@ -18,13 +18,13 @@ Condiciones del Trabajo:
 
 - Todos los controladores - Todos los repositorios - Todos los Servicios: OK ✔
 
--  El jar creado: OK ✔
+-  El jar creado: OK ✔ (se encuentra en /build/libs)
 
-- El archivo del diagrama de clases creado: OK ✔
+- El archivo del diagrama de clases creado: OK ✔ (Es el archivo Lucca44064Diag.doc)
 
-- Un archivo generado con postman para probar TU API - Una colleción: OK ✔
+- Un archivo generado con postman para probar TU API - Una colleción: OK ✔ (Se encuentra en la carpeta Postman)
 
-Notas para los profesores: 
+Notas Importantes: 
 
 1°: Hay una variable que sobra en Libros llamada autor (se me escapó), sin embargo no interfiere con el ArrayList de autores ni con la creación de instancias.
 
