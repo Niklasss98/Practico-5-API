@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "ddcedcd7-55a4-4750-b2f2-a68c193ebeea",
+		"name": "Persona API Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30205693"
+	},
+	"item": [
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/personas/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"apellido\": \"Nicolas\",\r\n  \"nombre\": \"Lucca\",\r\n  \"dni\": 41644401,\r\n  \"domicilio\": {\r\n    \"id\": 1,\r\n    \"calle\": \"Espana\",\r\n    \"numero\": 4535,\r\n    \"localidad\": {\r\n      \"id\": 1,\r\n      \"denominacion\": \"Guaymallen\"\r\n    }\r\n  },\r\n  \"libros\": [\r\n    {\r\n      \"id\": 1,\r\n      \"autor\": \"\",\r\n      \"fecha\": 1886,\r\n      \"genero\": \"Drama Psicologico\",\r\n      \"paginas\": 120,\r\n      \"titulo\": \"El extrano caso de Dr Jeckyll y Mr Hyde\",\r\n      \"autores\": [\r\n        {\r\n          \"id\": 1,\r\n          \"apellido\": \"Stevenson\",\r\n          \"biografia\": \"Autor Britanico oriundo de Escocia nacido en el siglo XIX\",\r\n          \"nombre\": \"Robert Louis\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/personas/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/personas/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/localidades/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"denominacion\": \"Guaymallen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/localidades/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/localidades/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/autores/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Robert Louis\",\r\n    \"apellido\": \"Stevenson\",\r\n    \"biografia\": \"Autor Britanico oriundo de Escocia nacido en el siglo XIX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/autores/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/autores/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libros",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/libros",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/libros/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"libros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/libros/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"libros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Domicilios",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/domicilios",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"domicilios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/domicilios/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"domicilios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/domicilios",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"domicilios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/domicilios/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"domicilios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://practico5api.onrender.com/api/basedatos/domicilios/1",
+							"protocol": "https",
+							"host": [
+								"practico5api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"domicilios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
