@@ -32,4 +32,4 @@ Notas Importantes:
 
 3°: RENDER suele apagar la base de datos pasado un tiempo; por lo que calculé son aprox. 2 minutos que tarda en arrancar pasado el request de la URL. Después de ese tiempo funcionan ambos links.
 
-4°: A veces sucede que dependiendo de los puertos que utilice RENDER para levantar el servidor, cuando se quiere ingresar a la página devuelve un error 502. No he encontrado una solución estable para este problema, probé eliminando la caché y reiniciando el deploy y suele solucionarse, pero vuelve a tener problemas pasado un tiempo.
+4°: A veces sucede que dependiendo de los puertos que utilice RENDER para levantar el servidor, cuando se quiere ingresar a la página devuelve un error 502. No he encontrado una solución estable para este problema, probé eliminando la caché y reiniciando el deploy y suele arreglarse, pero vuelve a tener problemas pasado un tiempo.
